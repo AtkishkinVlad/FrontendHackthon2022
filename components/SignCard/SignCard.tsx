@@ -12,7 +12,7 @@ export const SignCard: React.FC = () => {
     <article className={style.SignCard}>
       <h2 className={style.SignCard__header}>Сервис открыток</h2>
       <p className={style.SignCard__text}>
-        Создавайте открытки и узнавайте новое о своих коллегах и их{' '}
+        Создавайте открытки и узнавайте<br/>новое о своих коллегах и их<br/>
         <span className={style.SignCard__accent}>увлечениях</span>
       </p>
       <TelegramLoginButton botName="christmas_card_bot" dataOnauth={handleTelegramResponse} />
