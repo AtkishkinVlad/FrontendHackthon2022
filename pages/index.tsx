@@ -5,8 +5,7 @@ import { HistoryCard, IHistoryCard } from '../components/HistoryCard/HistoryCard
 
 import styles from '../styles/Home.module.css'
 
-export default function Home(history: IHistoryCard[]) {
-  console.log(history.history);
+export default function Home(history: { history: IHistoryCard[] }) {
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>
