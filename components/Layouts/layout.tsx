@@ -1,6 +1,6 @@
 import React from "react"
 
-import { ExportAside } from "./Aside"
+import { ExportAside } from "../Aside"
 
 type ILayout = {
     children: React.ReactNode
