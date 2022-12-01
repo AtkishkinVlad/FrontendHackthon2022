@@ -1,0 +1,30 @@
+.AsideContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    gap: 20px;
+    padding: 10px;
+    position: fixed;
+    background: #f0f0f0;
+    height: 100vh;
+}
+
+.AsideContainer__links {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 16px;
+}
+
+.AsideContainer__profile {
+    border: 0;
+    cursor: pointer;
+    padding: 8px;
+    transition: .15s ease-in;
+    border-radius: 8px;
+}
+
+.AsideContainer__profile:hover {
+    background-color: #FFF;
+}

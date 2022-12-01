@@ -1,0 +1,11 @@
+.AsideItem {
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px;
+    border-radius: 8px;
+    transition: .15s ease-in;
+}
+
+.AsideItem:hover {
+    background-color: #FFF;
+}
