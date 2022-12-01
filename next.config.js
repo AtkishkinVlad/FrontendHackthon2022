@@ -13,6 +13,9 @@ const nextConfig = {
     domains: ['replicate.delivery']
   },
   swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 }
 
 module.exports = nextConfig

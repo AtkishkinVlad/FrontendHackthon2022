@@ -1,0 +1,7 @@
+.Card {
+  width: 456px;
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,11 +1,11 @@
 import React from 'react'
+import type { ReactElement, ReactNode } from 'react'
 import type { AppProps } from 'next/app'
+import type { NextPage } from 'next'
 import localFont from '@next/font/local'
 
 import Layout from '../components/Layouts/layout'
 import '../styles/globals.css'
-import type { ReactElement, ReactNode } from 'react'
-import type { NextPage } from 'next'
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -41,15 +41,13 @@ const LabGrotesqueKFont = localFont({
 })
 
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
-
-  const getLayout = Component.getLayout
-    || ((page: React.ReactNode) => <Layout>{page}</Layout>)
-
-    console.log({getLayout})
+  const CurrentLayout = Component.getLayout || Layout
 
   return (
     <main className={`${LabGrotesqueKFont.className}`}>
-      {getLayout(<Component {...pageProps} />)}
+      <CurrentLayout>
+        <Component {...pageProps}/>
+      </CurrentLayout>
     </main>
   )
 }

@@ -1,10 +1,6 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-type Props = {
-  children: React.ReactNode;
-}
-
-const EmptyLayout: React.FC<Props> = ({ children }) => {
+const EmptyLayout = ({ children }: { children: ReactNode}) => {
   return (
     <main>{children}</main>
   )
