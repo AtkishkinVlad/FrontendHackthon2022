@@ -1,0 +1,41 @@
+.base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 64px;
+}
+
+.green {
+    color: #fff;
+    background-color: #A7EEB3;
+}
+
+.pink {
+    color: #fff;
+    background-color: #EABDF6;
+}
+
+.orange {
+    color: #fff;
+    background-color: #FFD1A0;
+}
+
+.blue {
+    color: #fff;
+    background-color: #AEDDFF;
+}
+
+.red {
+    color: #fff;
+    background-color: #FFC8BF;
+}
+
+.big {
+    width: 288px;
+    height: 96px;
+}
+
+.small {
+    width: 96px;
+    height: 32px;
+}

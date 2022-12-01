@@ -1,0 +1,45 @@
+.HistoryCard__container {
+    display: flex;
+    margin: 24px 0 0 0;
+    max-width: 50vw;
+    max-height: 40vh;
+    background-color: #000;
+    border-radius: 32px;
+}
+
+.HistoryCard__description {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.HistoryCard__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.HistoryCard__image_container {
+    margin: 24px;
+}
+
+.HistoryCard__image_container > {
+    position: unset !important;
+}
+
+.HistoryCard__image {
+    object-fit: contain;
+    width: 20vw !important;
+    height: 100% !important;
+    border-radius: 32px;
+    position: relative !important;
+    height: unset !important;
+}
+
+.HistoryCard__description_user {
+    color: #fff;
+}
+
+.HistoryCard__description_tags {
+    color: #fff;
+}

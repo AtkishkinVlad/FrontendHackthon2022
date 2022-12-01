@@ -25,6 +25,11 @@
     border-radius: 8px;
 }
 
+.AsideContainer__logo {
+    font-size: 24px;
+    color: #00B59A;
+}
+
 .AsideContainer__profile:hover {
     background-color: #FFF;
 }

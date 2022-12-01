@@ -7,7 +7,10 @@ const nextConfig = {
         {
             loader: '@next/font/local'
         }
-    ]
+    ],
+  },
+  images: {
+    domains: ['replicate.delivery']
   },
   swcMinify: true,
 }
