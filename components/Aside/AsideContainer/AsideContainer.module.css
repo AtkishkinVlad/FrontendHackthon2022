@@ -23,6 +23,13 @@
     padding: 8px;
     transition: .15s ease-in;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.AsideContainer__profile img {
+    margin-right: 16px;
 }
 
 .AsideContainer__profile:hover {

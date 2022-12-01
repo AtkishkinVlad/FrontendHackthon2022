@@ -10,9 +10,17 @@ type IAsideContainer = {
   userName: string;
 };
 
+const formatName = (userName: string) => {
+  console.log(userName)
+  const nameArr = userName.split(' ');
+  return `${nameArr[0]} ${nameArr[1][0]}. ${nameArr[2][0]}.`
+}
+
 export const AsideContainer = ({ links, userName }: IAsideContainer) => {
   const [opened, setOpened] = React.useState(false);
   const [panel, setPanel] = React.useState(false);
+
+  const formatedName = formatName(userName)
 
   function renderModal() {
     return (
@@ -51,7 +59,7 @@ export const AsideContainer = ({ links, userName }: IAsideContainer) => {
       </div>
       <button className={style.AsideContainer__profile} onClick={open}>
         <Image width={24} height={24} src="/Profile.svg" alt="Изображение профиля" />
-        {userName}
+        {formatedName}
       </button>
     </aside>
   );

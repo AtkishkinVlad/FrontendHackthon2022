@@ -4,6 +4,13 @@
     padding: 8px;
     border-radius: 8px;
     transition: .15s ease-in;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.AsideItem img {
+    margin-right: 16px;
 }
 
 .AsideItem:hover {
