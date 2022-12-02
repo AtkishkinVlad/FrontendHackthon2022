@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: calc(20vw + 48px);
+}
+
+.header {
+    font-size: 48px;
+    margin-top: 0;
+    padding: 24px 0 0 0;
+    margin-bottom: 24px;
+}
+
+.image {
+    border-radius: 16px;
+}
+
+.input {
+    margin: 24px 0 0 0;
+    width: 455px;
+}
+
+.input__block {
+    display: inline;
+}
+
+.button {
+    margin-left: 16px;
+}
+
+.textarea {
+    margin-bottom: 48px;
+    width: 50vw !important;
+}
+
+.block {
+    margin-top: 48px;
+}

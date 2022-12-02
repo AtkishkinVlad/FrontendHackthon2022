@@ -10,7 +10,7 @@ const nextConfig = {
     ],
   },
   images: {
-    domains: ['replicate.delivery']
+    domains: ['replicate.delivery', 'i.pinimg.com', 'staff.skbkontur.ru']
   },
   swcMinify: true,
 }

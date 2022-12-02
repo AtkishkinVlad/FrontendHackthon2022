@@ -3,7 +3,7 @@ import { AsideContainer } from "./AsideContainer/AsideContainer"
 const ASIDE_LINKS = [
     {
         name: 'Открытки',
-        link: '/postcards'
+        link: '/'
     },
     {
         name: 'Пользователи',
