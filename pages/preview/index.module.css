@@ -1,0 +1,68 @@
+.user {
+
+}
+
+.user__back {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+}
+
+.user__container {
+  width: 514px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: center;
+}
+
+.user__header {
+  width: 700px;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+}
+
+.user__img {
+  width: 100%;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.user__picture {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.user__balls {
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100px);
+}
+
+.user__p {
+  margin-bottom: 48px;
+}
+
+.user__button {
+  margin-bottom: 80px;
+}
+
+@media print {
+  .user__back {
+    display: none;
+  }
+
+  .user__button {
+    display: none;
+  }
+}
+

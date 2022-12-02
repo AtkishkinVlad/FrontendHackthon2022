@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <main className={`${LabGrotesqueKFont.className}`}>
-      <CurrentLayout><Component {...pageProps} /></CurrentLayout>)
+      <CurrentLayout><Component {...pageProps} /></CurrentLayout>
     </main>
   )
 }
