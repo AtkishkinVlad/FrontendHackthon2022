@@ -13,6 +13,9 @@ const nextConfig = {
     domains: ['replicate.delivery', 'i.pinimg.com', 'staff.skbkontur.ru']
   },
   swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true
+  }
 }
 
 module.exports = nextConfig
