@@ -55,9 +55,12 @@
     font-size: 36px;
     white-space: nowrap;
     margin-left: calc(20vw + 48px + 5vw);
+    margin-top: 24px;
+    margin-bottom: 24px;
     border-radius: 16px;
-    display: inline;
+    transition: .2s ease;
 }
 
 .generator:hover {
+    text-decoration: underline;
 }

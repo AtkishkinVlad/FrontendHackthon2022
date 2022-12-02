@@ -1,6 +1,6 @@
 import { Button, Toggle, Modal } from "@skbkontur/react-ui";
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 import { AsideItem, IAsideItem } from "../AsideItem/AsideItem";
 import style from "../AsideContainer/AsideContainer.module.css";
@@ -63,10 +63,10 @@ export const AsideContainer = ({ links, userName }: IAsideContainer) => {
             <AsideItem link={link.link} key={link.name} name={link.name} />
         ))}
       </div>
-      <button className={style.AsideContainer__profile} onClick={open}>
+      {/* <button className={style.AsideContainer__profile} onClick={open}>
         <Image width={24} height={24} src="/Profile.svg" alt="Изображение профиля" />
-        {formatedName}
-      </button>
+        {userName}
+      </button> */}
     </aside>
   );
 };

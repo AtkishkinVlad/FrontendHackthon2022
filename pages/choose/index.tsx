@@ -40,7 +40,7 @@ const Choose = ({ diadocEmployees }) => {
                     Этот хитрый кисик не рассказал масонам о своих интересах, но Диадоковцы знают <Link href={infoLink}>где искать информацию</Link> :)
                 </p>}
             </section>
-            <NextLink className={styles.generator} href="/generator">
+            <NextLink className={styles.generator} href="generator">
                 Сделать первую открытку →
             </NextLink>
         </div>

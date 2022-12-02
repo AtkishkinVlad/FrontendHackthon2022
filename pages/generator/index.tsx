@@ -9,7 +9,7 @@ const Generator = () => {
     const [value, setValue] = useState('');
 
     const fetchData = async (text: string) => {
-        await fetch(`https://31ca-217-114-224-7.eu.ngrok.io/model?text=${text}`, { mode: 'no-cors' }).then(async (res) => {
+        await fetch(`https://6dfd-217-114-224-7.eu.ngrok.io/model?text=${text}`, { mode: 'no-cors' }).then(async (res) => {
             const response = await res.json();
             setImageUrl(response);
         })
