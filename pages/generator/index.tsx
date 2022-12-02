@@ -7,13 +7,32 @@ import styles from "../generator/index.module.css";
 const Generator = () => {
     const [imageUrl, setImageUrl] = useState('https://replicate.delivery/pbxt/wDTf6b1GOox3KyGbGdVijX7asfMLZasVx5wmhm0fk10XWJLgA/out-0.png');
     const [value, setValue] = useState('');
+    const [loading, setLoading] = useState(false);
 
-    const fetchData = async (text: string) => {
-        await fetch(`https://6dfd-217-114-224-7.eu.ngrok.io/model?text=${text}`, { mode: 'no-cors' }).then(async (res) => {
-            const response = await res.json();
-            setImageUrl(response);
-            localStorage.setItem('imageUrl', response);
+    const body = JSON.stringify({
+        version: "be04660a5b93ef2aff61e3668dedb4cbeb14941e62a3fd5998364a32d613e35e",
+        input: value,
+    });
+
+    const fetchData = () => {
+        setLoading(true);
+        fetch(`https://api.replicate.com/v1/predictions`, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              Authorization: `Token 2e1ddf7781b00bb03c4f2c688c12fba1b00c920c`,
+              "Content-Type": "application/json"
+            },
+            body,
+        }).then((res) => {
+            console.log({res})
+            return res.text()
         })
+        .then((response) => { 
+            setImageUrl(response)
+        })
+        .catch(console.log)
+        .finally(() => setLoading(false))
     }
 
     return (
@@ -27,7 +46,7 @@ const Generator = () => {
             <Image src={imageUrl} width={455} height={455} alt="Картинка для открытки" className={styles.image} />
             <div className={styles.input__block}>
                 <Input className={styles.input} onChange={(e) => setValue(e.target.value)}/>
-                <Button className={styles.button} onClick={() => fetchData(value)}>
+                <Button loading={loading} className={styles.button} onClick={() => fetchData(value)}>
                     Нарисовать
                 </Button>
             </div>

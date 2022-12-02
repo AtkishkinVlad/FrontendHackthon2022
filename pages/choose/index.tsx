@@ -14,7 +14,7 @@ const Choose = ({ diadocEmployees }) => {
     const userTags = diadocEmployees.data.filter(employee => employee.attributes.fio === value)[0]?.attributes?.tags?.split(',');
     const infoLink = diadocEmployees.data.filter(employee => employee.attributes.fio === value)[0]?.attributes?.infoLink;
     
-    localStorage.setItem('fio', value);
+    window.localStorage.setItem('fio', value);
 
     return (
         <div className={styles.container}>
