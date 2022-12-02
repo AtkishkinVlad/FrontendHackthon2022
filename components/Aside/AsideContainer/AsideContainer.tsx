@@ -11,7 +11,6 @@ type IAsideContainer = {
 };
 
 const formatName = (userName: string) => {
-  console.log(userName)
   const nameArr = userName.split(' ');
   return `${nameArr[0]} ${nameArr[1][0]}. ${nameArr[2][0]}.`
 }
